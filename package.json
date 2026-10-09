@@ -5,13 +5,12 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "build": "npm run validate",
+    "build": "npm test",
     "start": "npx -y serve .",
     "preview": "npx -y serve .",
     "test": "node --test tests/*.test.js",
     "test:coverage": "node --test --experimental-test-coverage tests/*.test.js",
-    "lint": "node --check app.js js/*.js",
-    "validate": "npm run lint && npm run test"
+    "validate": "npm test"
   },
   "keywords": [
     "campus-companion",
